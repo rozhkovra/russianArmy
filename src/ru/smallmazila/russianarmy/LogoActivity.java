@@ -1,7 +1,7 @@
 package ru.smallmazila.russianarmy;
 
+import ru.smallmazila.android.activity.RunUtil;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -19,9 +19,7 @@ public class LogoActivity extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent();
-				intent.setClass(LogoActivity.this, TypesActivity.class);
-				LogoActivity.this.startActivity(intent);
+				RunUtil.runEmptyActivity(LogoActivity.this, TypesActivity.class);
 			}
 		});
 	}

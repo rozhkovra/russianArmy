@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +25,14 @@
         <activity
             android:name="ru.smallmazila.russianarmy.TypesActivity"
             android:label="@string/title_activity_types" >
+        </activity>
+        <activity
+            android:name="ru.smallmazila.russianarmy.WaterActivity"
+            android:label="@string/title_activity_water" >
+        </activity>
+        <activity
+            android:name="ru.smallmazila.russianarmy.ChapterActivity"
+            android:label="@string/title_activity_chapter" >
         </activity>
     </application>
 

@@ -8,5 +8,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_chapter">ChapterActivity</string>
+    <string name="title_activity_unit_card">UnitCardActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="tth_title"><u>TTX</u></string>
+    <string name="weapon_title"><u>Вооружение</u></string>
+    <string name="size_title"><u>Размеры</u></string>
 
 </resources>

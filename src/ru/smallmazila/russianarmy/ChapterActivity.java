@@ -1,9 +1,11 @@
 package ru.smallmazila.russianarmy;
 
+import ru.smallmazila.android.activity.RunUtil;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -35,6 +37,16 @@ public class ChapterActivity extends Activity {
 
 		view = new TextView(this);
 		view.setText("- Адмирал флота Советсвого Союза Кузнецов");
+		view.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent();
+				i.putExtra("UnitTitle", "ТАКР \"Адмирал флота Советского Союза Кузнецов\"");
+				RunUtil.runArgsActivity(ChapterActivity.this, UnitCardActivity.class, i);
+			}
+		});
 		row.addView(view);
 
 		table.addView(row);

@@ -4,12 +4,10 @@ import ru.smallmazila.android.activity.RunUtil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Display;
-import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout.LayoutParams;
 
 public class TypesActivity extends Activity {
@@ -47,12 +45,4 @@ public class TypesActivity extends Activity {
 		Button otherButton = (Button)findViewById(R.id.button4);
 		otherButton.setLayoutParams(new LayoutParams(width/2, height/2));
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_types, menu);
-		return true;
-	}
-
 }

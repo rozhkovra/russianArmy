@@ -1,6 +1,7 @@
 package ru.smallmazila.russianarmy;
 
 import ru.smallmazila.android.activity.RunUtil;
+import ru.smallmazila.russianarmy.data.Filter;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,8 +10,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -20,6 +21,9 @@ public class WaterActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+	            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 		setContentView(R.layout.activity_water);
 
 		setTitle("—ÓÒÚ‡‚ ¬Ã‘ –‘");
@@ -44,6 +48,10 @@ public class WaterActivity extends Activity {
 
 		view = new TextView(this);
 		view.setText("-¡Õ Œ ");
+		row.addView(view);
+
+		view = new TextView(this);
+		view.setText("-œÀ¿–¡");
 		row.addView(view);
 
 		table.addView(row);
@@ -71,13 +79,57 @@ public class WaterActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent i = new Intent();
-				i.putExtra("ChapterTitle", "¿‚Ë‡ÌÓÒˆ˚");
+				i.putExtra("chapterId", 1L);
+				Filter.chapterId=1L;
+				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
+			}
+		});
+		row.addView(iView);
+
+		iView = new ImageView(this);
+
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.submarine_ballistic_chapter);//image is your image                                                            
+		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
+		iView.setImageBitmap(bmp);		
+
+		iView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent();
+				i.putExtra("chapterId", 2L);
+				Filter.chapterId=2L;
 				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
 			}
 		});
 		row.addView(iView);
 
 		table.addView(row);
+		
+		row = new TableRow(this);
+		
+		iView = new ImageView(this);
+
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.craiser_chapter);//image is your image                                                            
+		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
+		iView.setImageBitmap(bmp);		
+
+		iView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent();
+				i.putExtra("chapterId", 1L);
+				Filter.chapterId=1L;
+				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
+			}
+		});
+		row.addView(iView);
+
+		table.addView(row);
+
 	}
 
 }

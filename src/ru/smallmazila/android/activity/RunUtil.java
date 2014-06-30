@@ -6,7 +6,6 @@ import android.content.Intent;
 public class RunUtil {
 	public static void runEmptyActivity(Activity activity, Class<? extends Activity> toActivity){
 		Intent intent = new Intent();
-//		intent.setClass(LogoActivity.this, TypesActivity.class);
 		intent.setClass(activity, toActivity);
 		activity.startActivity(intent);
 	}

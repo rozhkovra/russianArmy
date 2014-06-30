@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:keepScreenOn="true"
-        android:textColor="#33b5e5"
+        android:textColor="#ffffff"
         android:textSize="50sp"
         android:textStyle="bold" />
 
@@ -32,31 +32,12 @@
         android:fitsSystemWindows="true" >
 
         <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="?metaButtonBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent" >
-
-            <Button
-                android:id="@+id/dummy_button"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
-        </LinearLayout>
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
@@ -74,16 +55,28 @@
                     android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top"
-                    android:src="@drawable/aircraft_carrier_kuznetsov" 
-                	android:padding="3pt"/>
+                    android:layout_gravity="top"/>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/tth_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="@string/tth_title"
-                    android:padding="3pt"/>
+                    android:textColor="#ffffff"
+                    android:padding="3pt" />
+                <TextView
+                    android:id="@+id/tth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:padding="3pt"
+                    android:textColor="#ffffff"
+                    android:textSize="5pt" />
+		</LinearLayout>
 
             </LinearLayout>
 
@@ -91,31 +84,59 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/weapon_title"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
                     android:text="@string/weapon_title"
+                    android:textColor="#ffffff"
                     android:padding="3pt" />
-
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="top"
-                    android:text="@string/size_title" 
-                    android:padding="3pt"/>
+                    android:id="@+id/weapon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:padding="3pt"
+                    android:textSize="5pt" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/unitsize_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size_title"
+                    android:textColor="#ffffff"
+                    android:padding="3pt" />
+                <TextView
+                    android:id="@+id/unitsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:padding="3pt"
+                    android:textSize="5pt" />
+		</LinearLayout>
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/desc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="top"
                 android:text="Описание" 
-                android:padding="3pt"/>
+                android:textColor="#ffffff"
+                android:padding="3pt"
+                android:textStyle="italic"/>
 
         </LinearLayout>
 

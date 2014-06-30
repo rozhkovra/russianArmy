@@ -32,8 +32,15 @@ public class WaterUnitModel implements UnitModel {
 	@Override
 	public WaterUnitModel addUnit(Unit unit) {
 		// TODO Auto-generated method stub
+		unit.setUnitModel(this);
 		units.put(unit.getId(), unit);
 		return this;
+	}
+
+	@Override
+	public Map<Long,Unit> getUnits() {
+		// TODO Auto-generated method stub
+		return this.units;
 	}
 
 }

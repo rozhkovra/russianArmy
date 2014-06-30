@@ -1,18 +1,25 @@
 package ru.smallmazila.russianarmy.impl.water;
 
+import java.util.List;
+
+import ru.smallmazila.russianarmy.model.Tth;
 import ru.smallmazila.russianarmy.model.Unit;
+import ru.smallmazila.russianarmy.model.UnitModel;
+import ru.smallmazila.russianarmy.model.UnitSize;
+import ru.smallmazila.russianarmy.model.Weapon;
 
 public class WaterUnit implements Unit {
 	private long id;
 	protected String title;
 	protected String description;
-	protected String tth;
-	protected String weapons;
-	protected String size;	
+	protected Tth tth;
+	protected List<Weapon> weapons;
+	protected UnitSize size;	
 	protected int image;
+	protected UnitModel unitModel;
 		
-	public WaterUnit(long id, String title, String description, String tth,
-			String weapons, String size, int image) {
+	public WaterUnit(long id, String title, String description, Tth tth,
+			List<Weapon> weapons, UnitSize size, int image) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -42,19 +49,19 @@ public class WaterUnit implements Unit {
 	}
 
 	@Override
-	public String getTth() {
+	public Tth getTth() {
 		// TODO Auto-generated method stub
 		return tth;
 	}
 
 	@Override
-	public String getWeapons() {
+	public List<Weapon> getWeapons() {
 		// TODO Auto-generated method stub
 		return weapons;
 	}
 
 	@Override
-	public String getSize() {
+	public UnitSize getSize() {
 		// TODO Auto-generated method stub
 		return size;
 	}
@@ -64,5 +71,17 @@ public class WaterUnit implements Unit {
 		// TODO Auto-generated method stub
 		return image;
 	}
+
+	@Override
+	public void setUnitModel(UnitModel um) {
+		// TODO Auto-generated method stub
+		this.unitModel = um;
+	}
+
+	public UnitModel getUnitModel() {
+		return unitModel;
+	}
+	
+	
 
 }

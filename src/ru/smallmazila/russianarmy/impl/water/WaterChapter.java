@@ -7,11 +7,10 @@ import ru.smallmazila.russianarmy.model.Chapter;
 import ru.smallmazila.russianarmy.model.UnitModel;
 
 public class WaterChapter implements Chapter {
+	private long id;
 	protected String name;
 	protected Map<String, UnitModel> unitModels = new HashMap<String, UnitModel>();
-	
-	
-	
+		
 	public WaterChapter(String name) {
 		super();
 		this.name = name;
@@ -36,4 +35,17 @@ public class WaterChapter implements Chapter {
 		return this;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	@Override
+	public UnitModel getUnitModel(String key) {
+		// TODO Auto-generated method stub
+		return this.unitModels.get(key);
+	}	
 }

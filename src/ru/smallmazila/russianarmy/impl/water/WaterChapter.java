@@ -35,6 +35,13 @@ public class WaterChapter implements Chapter {
 		return this;
 	}
 
+	public WaterChapter addUnitModel(UnitModel[] ums) {
+		// TODO Auto-generated method stub
+		for(UnitModel um : ums)
+		this.addUnitModel(um);
+		return this;
+	}
+
 	public long getId() {
 		return id;
 	}

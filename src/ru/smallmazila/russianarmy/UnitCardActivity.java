@@ -4,10 +4,12 @@ import ru.smallmazila.russianarmy.data.Filter;
 import ru.smallmazila.russianarmy.data.MyData;
 import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.util.Util;
+import ru.smallmazila.russianarmy.vacabulary.UnitStatus;
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.WindowManager;
@@ -27,7 +29,11 @@ public class UnitCardActivity extends Activity {
 	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 	            WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) 
+		long unitId = getIntent().getLongExtra("unitId", 0L);
+		Unit unit = MyData.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
+
+		setTitle(unit.getTitle());
+	    if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) 
 			setContentView(R.layout.activity_unit_card_portrait);
 		else
 			setContentView(R.layout.activity_unit_card_landscape);
@@ -40,9 +46,6 @@ public class UnitCardActivity extends Activity {
 		
 		ImageView image = (ImageView)findViewById(R.id.imageView1);
 
-		long unitId = getIntent().getLongExtra("unitId", 0L);
-		Unit unit = MyData.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
-
 	    Bitmap bmp = BitmapFactory.decodeResource(getResources(),unit.getImage());//image is your image                                                            
 		int iWidth = bmp.getWidth();
 		int iHeight = bmp.getHeight();
@@ -54,6 +57,8 @@ public class UnitCardActivity extends Activity {
 		image.setImageBitmap(bmp);		
 
 		TextView text = (TextView)findViewById(R.id.title);
+		if(unit.getStatus()!=UnitStatus.AVAILABLE)
+			text.setTextColor(Color.parseColor("#FFFF00"));
 		text.setText(unit.getTitle());
 		
 		TextView text5 = (TextView)findViewById(R.id.desc);

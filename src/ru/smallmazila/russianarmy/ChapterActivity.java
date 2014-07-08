@@ -5,6 +5,7 @@ import ru.smallmazila.russianarmy.data.Filter;
 import ru.smallmazila.russianarmy.data.MyData;
 import ru.smallmazila.russianarmy.model.Chapter;
 import ru.smallmazila.russianarmy.model.Unit;
+import ru.smallmazila.russianarmy.util.Util;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -14,10 +15,9 @@ import android.view.WindowManager;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ChapterActivity extends Activity {
-	private Unit curUnit;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,20 +42,24 @@ public class ChapterActivity extends Activity {
 			table.addView(row);
 		
 			for (Unit unit : chapter.getUnitModel(um).getUnits().values()){
-				curUnit = unit;
 				row = new TableRow(this);
 
 				view = new TextView(this);
+				view.setId((int)unit.getId());
 				view.setText(unit.getTitle());
 				view.setOnClickListener(new View.OnClickListener() {			
 					@Override
 					public void onClick(View v) {
 						// TODO Auto-generated method stub
-						Intent i = new Intent();
-						i.putExtra("unitId", curUnit.getId());
-						Filter.unitId = curUnit.getId();
-						Filter.unitModel = curUnit.getUnitModel().getName();
-						RunUtil.runArgsActivity(ChapterActivity.this, UnitCardActivity.class, i);
+						Unit unit = Util.findUnitById((long)v.getId());
+						if(unit!=null){
+							Intent i = new Intent();
+							i.putExtra("unitId", unit.getId());
+							Filter.unitId = unit.getId();
+							Filter.unitModel = unit.getUnitModel().getName();
+							RunUtil.runArgsActivity(ChapterActivity.this, UnitCardActivity.class, i);
+						}else
+							Toast.makeText(getApplicationContext(), "Error of getting unit!", Toast.LENGTH_SHORT);
 					}
 				});
 				row.addView(view);

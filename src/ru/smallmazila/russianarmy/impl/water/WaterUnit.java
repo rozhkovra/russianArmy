@@ -7,19 +7,23 @@ import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.model.UnitModel;
 import ru.smallmazila.russianarmy.model.UnitSize;
 import ru.smallmazila.russianarmy.model.Weapon;
+import ru.smallmazila.russianarmy.model.WeaponList;
+import ru.smallmazila.russianarmy.vacabulary.UnitStatus;
 
 public class WaterUnit implements Unit {
+	public static long currentId = 0;
 	private long id;
 	protected String title;
 	protected String description;
 	protected Tth tth;
-	protected List<Weapon> weapons;
-	protected UnitSize size;	
+	protected WeaponList weapons;
+	protected UnitSize size;
+	protected UnitStatus status;
 	protected int image;
 	protected UnitModel unitModel;
 		
 	public WaterUnit(long id, String title, String description, Tth tth,
-			List<Weapon> weapons, UnitSize size, int image) {
+			WeaponList weapons, UnitSize size, UnitStatus status, int image) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -27,6 +31,7 @@ public class WaterUnit implements Unit {
 		this.tth = tth;
 		this.weapons = weapons;
 		this.size = size;
+		this.status = status;
 		this.image = image;
 	}
 
@@ -57,7 +62,7 @@ public class WaterUnit implements Unit {
 	@Override
 	public List<Weapon> getWeapons() {
 		// TODO Auto-generated method stub
-		return weapons;
+		return weapons.weapons;
 	}
 
 	@Override
@@ -81,7 +86,15 @@ public class WaterUnit implements Unit {
 	public UnitModel getUnitModel() {
 		return unitModel;
 	}
-	
-	
 
+	public UnitStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(UnitStatus status) {
+		this.status = status;
+	}
+	
+	
+	
 }

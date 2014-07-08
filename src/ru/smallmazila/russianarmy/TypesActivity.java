@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 public class TypesActivity extends Activity {
@@ -44,5 +45,7 @@ public class TypesActivity extends Activity {
 
 		Button otherButton = (Button)findViewById(R.id.button4);
 		otherButton.setLayoutParams(new LayoutParams(width/2, height/2));
+		
+		RunUtil.createFliper(this).fromLayout = (LinearLayout)findViewById(R.id.mainLayout);
 	}
 }

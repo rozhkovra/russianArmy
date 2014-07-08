@@ -98,8 +98,8 @@ public class WaterActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent i = new Intent();
-				i.putExtra("chapterId", 2L);
-				Filter.chapterId=2L;
+				i.putExtra("chapterId", 3L);
+				Filter.chapterId=3L;
 				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
 			}
 		});
@@ -121,15 +121,45 @@ public class WaterActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent i = new Intent();
-				i.putExtra("chapterId", 1L);
-				Filter.chapterId=1L;
+				i.putExtra("chapterId", 2L);
+				Filter.chapterId=2L;
 				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
 			}
 		});
 		row.addView(iView);
+		
+		view = new TextView(this);
+		view.setText("-œÀ¿– ");
+		row.addView(view);
 
 		table.addView(row);
+		
+		row = new TableRow(this);
+		
+		view = new TextView(this);
+		view.setText("");
+		row.addView(view);
 
+		iView = new ImageView(this);
+
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.yasen_855);//image is your image                                                            
+		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
+		iView.setImageBitmap(bmp);		
+
+		iView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent();
+				i.putExtra("chapterId", 4L);
+				Filter.chapterId=4L;
+				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
+			}
+		});
+		row.addView(iView);
+		
+		table.addView(row);
 	}
 
 }

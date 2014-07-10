@@ -226,7 +226,7 @@ public class LogoActivity extends Activity{
 				);				
 		chapter.addUnitModel(new WaterUnitModel("955").addUnit(new WaterUnit(
 				++WaterUnit.currentId
-				, "Атомный ракетный подводный крейсер стратегического назначения \"Юрий Долгорукий\""
+				, "АРПКCН \"Юрий Долгорукий\""
 				, "Атомный ракетный подводный крейсер стратегического назначения \"Юрий Долгорукий\""
 				, new WaterTth(29, 90, 107, 190)
 				, weapons
@@ -242,7 +242,7 @@ public class LogoActivity extends Activity{
 		);				
 		chapter.getUnitModel("955").addUnit(new WaterUnit(
 			++WaterUnit.currentId
-			, "Атомный ракетный подводный крейсер стратегического назначения \"Александр Невский\""
+			, "АРПКCН \"Александр Невский\""
 			, "\"Александр Невский\" - атомный ракетный подводный крейсер стратегического назначения четвертого поколения проекта 955 \"Борей\"."
 			, new WaterTth(29, 90, 107, 190)
 			, weapons
@@ -258,7 +258,7 @@ public class LogoActivity extends Activity{
 		);				
 		chapter.getUnitModel("955").addUnit(new WaterUnit(
 			++WaterUnit.currentId
-			, "Атомный ракетный подводный крейсер стратегического назначения \"Владимир Мономах\""
+			, "АРПКCН \"Владимир Мономах\""
 			, "\"Владимир Мономах\" - атомный ракетный подводный крейсер стратегического назначения четвертого поколения проекта 955 \"Борей\"."
 			, new WaterTth(29, 90, 107, 190)
 			, weapons
@@ -284,7 +284,7 @@ public class LogoActivity extends Activity{
 		);				
 		chapter.addUnitModel(new WaterUnitModel("855").addUnit(new WaterUnit(
 				++WaterUnit.currentId
-				, "Многоцелевая атомная подводная лодка с крылатыми ракетами \"Северодвинск\""
+				, "МАПЛ с крылатыми ракетами \"Северодвинск\""
 				, "\"Северодвинск\" - многоцелевая атомная подводная лодка с крылатыми ракетами, головной корабль проекта 855 \"Ясень\"."
 				, new WaterTth(31, 100, 90, 0)
 				, weapons

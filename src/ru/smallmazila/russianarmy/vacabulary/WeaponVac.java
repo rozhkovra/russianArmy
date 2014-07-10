@@ -10,7 +10,7 @@ public class WeaponVac {
 		put(WeaponType.TORPEDO,"Торпеды");
 		put(WeaponType.ANTITORPEDO,"Противоторпеды");
 		put(WeaponType.BOMB,"Бомбометные установки ");
-		put(WeaponType.BALLISTIC_ROCKET, "Баллистические рокеты");
-		put(WeaponType.WING_ROCKET, "Крылатые рокеты");
+		put(WeaponType.BALLISTIC_ROCKET, "Баллистические ракеты");
+		put(WeaponType.WING_ROCKET, "Крылатые ракеты");
 	}};
 }

@@ -14,5 +14,8 @@
     <string name="tth_title"><u>TTX</u></string>
     <string name="weapon_title"><u>Вооружение</u></string>
     <string name="size_title"><u>Размеры</u></string>
+    <string name="title_activity_flot_logo">FlotLogoActivity</string>
+    <string name="title_activity_vvslogo">VVSLogoActivity</string>
+    <string name="title_activity_earth_logo">EarthLogoActivity</string>
 
 </resources>

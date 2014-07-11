@@ -21,9 +21,11 @@ public class WaterUnit implements Unit {
 	protected UnitStatus status;
 	protected int image;
 	protected UnitModel unitModel;
+	protected Flot flot;
+	protected String number;
 		
 	public WaterUnit(long id, String title, String description, Tth tth,
-			WeaponList weapons, UnitSize size, UnitStatus status, int image) {
+			WeaponList weapons, UnitSize size, UnitStatus status, int image, Flot flot, String number) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -33,6 +35,8 @@ public class WaterUnit implements Unit {
 		this.size = size;
 		this.status = status;
 		this.image = image;
+		this.flot = flot;
+		this.number = number;
 	}
 
 	@Override
@@ -94,7 +98,20 @@ public class WaterUnit implements Unit {
 	public void setStatus(UnitStatus status) {
 		this.status = status;
 	}
-	
-	
-	
+
+	public Flot getFlot() {
+		return flot;
+	}
+
+	public void setFlot(Flot flot) {
+		this.flot = flot;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}	
 }

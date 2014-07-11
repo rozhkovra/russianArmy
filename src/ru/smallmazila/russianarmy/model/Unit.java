@@ -15,4 +15,5 @@ public interface Unit {
 	public void setUnitModel(UnitModel um);
 	public UnitModel getUnitModel();
 	public UnitStatus getStatus();
+	public String getNumber();
 }

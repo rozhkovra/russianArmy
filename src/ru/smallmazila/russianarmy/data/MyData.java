@@ -41,7 +41,7 @@ public class MyData {
 				++WaterUnit.currentId
 				, "ТАКР \"Адмирал флота Советского Союза Кузнецов\""
 				, "\"Адмирал флота Советского Союза Кузнецов\" - тяжелый авианесущий крейсер проекта 11435, единственный авианосец России."
-				, new WaterTth(29, 45, 1960, 0)
+				, new WaterTth(29, 45, 1960, 200000)
 				, weapons
 				, new WaterUnitSize(302.3, 72.3, 9.14, 43000)
 				, UnitStatus.AVAILABLE
@@ -116,21 +116,22 @@ public class MyData {
 				);
 		weapons = new WeaponList();
 	    weapons.add(new WaterWeapon[]{
-	    			  new WaterWeapon("АК-130", 0, WeaponType.ARTILLERY)
+	    			  new WaterWeapon("АК-130", 1, WeaponType.ARTILLERY)
 	    			, new WaterWeapon("Гранит", 20, WeaponType.ROCKET)
-	    			, new WaterWeapon("Риф", 96, WeaponType.ZRK)
-	    			, new WaterWeapon("Клинок", 0, WeaponType.ZRK)
-	    			, new WaterWeapon("3М87 \"Каштан\"", 0, WeaponType.ZRK)
-	    			, new WaterWeapon("РПК-6М \"Водопад\" 533 мм", 0, WeaponType.TORPEDO)
-	    			, new WaterWeapon("РКПТЗ-1 \"Удав-1М\"", 0, WeaponType.ANTITORPEDO)
-	    			, new WaterWeapon("РБУ-12000", 0, WeaponType.BOMB)
-	    			, new WaterWeapon("РБУ-1000 \"Смерч-3\"", 0, WeaponType.BOMB)}
+	    			, new WaterWeapon("С-300Ф", 48 , WeaponType.ZRK)
+	    			, new WaterWeapon("С-300ФМ", 46 , WeaponType.ZRK)
+	    			, new WaterWeapon("Кинжал", 128, WeaponType.ZRK)
+	    			, new WaterWeapon("3М87 \"Каштан\"", 144, WeaponType.ZRK)
+	    			, new WaterWeapon("РПК-6М \"Водопад\" 533 мм", 20, WeaponType.TORPEDO)
+	    			, new WaterWeapon("РКПТЗ-1 \"Удав-1М\"", 40, WeaponType.ANTITORPEDO)
+	    			, new WaterWeapon("РБУ-12000", 1, WeaponType.BOMB)
+	    			, new WaterWeapon("РБУ-1000 \"Смерч-3\"", 2, WeaponType.BOMB)}
 	    		);
 		chapter.getUnitModel("11442").addUnit(new WaterUnit(
 				++WaterUnit.currentId
 				, "ТАРКР \"Петр Великий\""
 				, "\"Петр Великий\" - тяжелый атомный ракетный крейсер проекта 11442, флагман Северного флота ВМФ РФ, крупнейший в мире неавианесущий ударный корабль (на 2008 год)." 
-				, new WaterTth(31, 0, 655, 140)
+				, new WaterTth(31, 0, 655, 140000)
 				, weapons
 				, new WaterUnitSize(251.1, 28.5, 10.3, 25860)
 				, UnitStatus.AVAILABLE
@@ -146,13 +147,13 @@ public class MyData {
 						, new WaterWeapon("АК-630", 6, WeaponType.ARTILLERY)
 						, new WaterWeapon("С-300Ф Риф", 64, WeaponType.ZRK)
 						, new WaterWeapon("\"Оса-МА\"", 48, WeaponType.ZRK)
-						, new WaterWeapon("533 мм", 0, WeaponType.TORPEDO)
-						, new WaterWeapon("РБУ-6000", 0, WeaponType.BOMB)}
+						, new WaterWeapon("533 мм", 2, WeaponType.TORPEDO)
+						, new WaterWeapon("РБУ-6000", 2, WeaponType.BOMB)}
 				);
 		chapter.getUnitModel("1164").addUnit(new WaterUnit(++WaterUnit.currentId
 				, "ГРКР \"Москва\""
 				, "\"Москва\" - ракетный крейсер, головной корабль проекта 1164 \"Атлант\"" 
-				, new WaterTth(32, 30, 510, 100)
+				, new WaterTth(32, 30, 510, 100000)
 				, weapons
 				, new WaterUnitSize(186.4, 20.8, 8.4, 11490)
 				, UnitStatus.AVAILABLE
@@ -168,14 +169,14 @@ public class MyData {
 				, new WaterWeapon("АК-630", 6, WeaponType.ARTILLERY)
 				, new WaterWeapon("С-300Ф Риф", 64, WeaponType.ZRK)
 				, new WaterWeapon("\"Оса-МА\"", 48, WeaponType.ZRK)
-				, new WaterWeapon("533 мм", 0, WeaponType.TORPEDO)
-				, new WaterWeapon("РБУ-6000", 0, WeaponType.BOMB)}
+				, new WaterWeapon("533 мм", 2, WeaponType.TORPEDO)
+				, new WaterWeapon("РБУ-6000", 2, WeaponType.BOMB)}
 		);
 		
 		chapter.getUnitModel("1164").addUnit(new WaterUnit(++WaterUnit.currentId
 				, "ГРКР \"Варяг\""
 				, "\"Москва\" - ракетный крейсер проекта 1164 \"Атлант\"" 
-				, new WaterTth(32, 30, 480, 0)
+				, new WaterTth(32, 30, 480, 100000)
 				, weapons
 				, new WaterUnitSize(186.4, 20.8, 8.4, 11490)
 				, UnitStatus.AVAILABLE
@@ -198,7 +199,7 @@ public class MyData {
 		chapter.getUnitModel("1164").addUnit(new WaterUnit(++WaterUnit.currentId
 				, "РКР \"Маршал Устинов\""
 				, "\"Маршал Устинов\" - ракетный крейсер проекта 1164" 
-				, new WaterTth(32, 30, 476, 0)
+				, new WaterTth(32, 30, 476, 100000)
 				, weapons
 				, new WaterUnitSize(186.4, 20.8, 7.6, 11280)
 				, UnitStatus.REPAIR

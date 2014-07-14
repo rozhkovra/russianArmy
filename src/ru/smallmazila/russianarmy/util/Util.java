@@ -29,4 +29,15 @@ public class Util {
 		}
 		return unit;
 	}
+	
+	public static String getPower(int val){
+		if(val / 1000 > 1)
+			return val/1000 + " т.";
+		else
+			return val+"";
+	}
+
+	public static String getAutonomy(int a) {
+		return (a==0)?"автономен":a+"";
+	}
 }

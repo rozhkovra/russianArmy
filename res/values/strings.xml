@@ -17,5 +17,6 @@
     <string name="title_activity_flot_logo">FlotLogoActivity</string>
     <string name="title_activity_vvslogo">VVSLogoActivity</string>
     <string name="title_activity_earth_logo">EarthLogoActivity</string>
+    <string name="title_activity_other_logo">OtherLogoActivity</string>
 
 </resources>

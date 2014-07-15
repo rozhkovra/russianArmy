@@ -3,6 +3,7 @@ package ru.smallmazila.russianarmy;
 import ru.smallmazila.android.activity.RunUtil;
 import ru.smallmazila.russianarmy.data.Filter;
 import ru.smallmazila.russianarmy.data.MyData;
+import ru.smallmazila.russianarmy.impl.water.WaterChapter;
 import ru.smallmazila.russianarmy.model.Chapter;
 import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.util.Util;
@@ -24,18 +25,22 @@ public class ChapterActivity extends Activity {
 	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 	            WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		setContentView(R.layout.activity_chapter);
+		setContentView(R.layout.activity_chapter);	
 				
 		Chapter chapter = MyData.chapters.get(getIntent().getLongExtra("chapterId",0L));
 		setTitle(chapter.getName());
 		
-		TableLayout table = (TableLayout)findViewById(R.id.mainTable);
+
 		
+		TableLayout table = (TableLayout)findViewById(R.id.mainTable);
+		if(chapter instanceof WaterChapter)
+			table.setBackgroundResource(R.drawable.water_background_800_480);
+
 		for(String um : chapter.getUnitModels().keySet()){
 			TableRow row = new TableRow(this);
 		
 			TextView view = new TextView(this);
-			view.setText(chapter.getUnitModel(um).getName());
+			view.setText(chapter.getUnitModel(um).getName()+" "+chapter.getUnitModel(um).getShortName());
 			view.setTypeface(null, Typeface.BOLD);
 			row.addView(view);
 			
@@ -46,7 +51,7 @@ public class ChapterActivity extends Activity {
 
 				view = new TextView(this);
 				view.setId((int)unit.getId());
-				view.setText(unit.getTitle());
+				view.setText(unit.getNumber()+" "+unit.getTitle());
 				view.setOnClickListener(new View.OnClickListener() {			
 					@Override
 					public void onClick(View v) {

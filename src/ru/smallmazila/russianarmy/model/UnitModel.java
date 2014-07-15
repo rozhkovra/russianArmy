@@ -8,5 +8,7 @@ public interface UnitModel {
 	public String getName();
 	public Unit getUnit(long id);
 	public WaterUnitModel addUnit(Unit unit);
-	public Map<Long,Unit> getUnits();	
+	public Map<Long,Unit> getUnits();
+	public String getShortName();
+	public String getShortDesc();
 }

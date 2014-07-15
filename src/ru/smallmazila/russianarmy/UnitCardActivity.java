@@ -4,6 +4,7 @@ import ru.smallmazila.russianarmy.data.Filter;
 import ru.smallmazila.russianarmy.data.MyData;
 import ru.smallmazila.russianarmy.impl.water.WaterUnit;
 import ru.smallmazila.russianarmy.model.Unit;
+import ru.smallmazila.russianarmy.model.UnitModel;
 import ru.smallmazila.russianarmy.util.Util;
 import ru.smallmazila.russianarmy.vacabulary.UnitStatus;
 import android.app.Activity;
@@ -54,6 +55,7 @@ public class UnitCardActivity extends Activity {
 		ImageView image = (ImageView)findViewById(R.id.imageView1);
 
 		long unitId = getIntent().getLongExtra("unitId", 0L);
+		UnitModel um = MyData.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel);
 		Unit unit = MyData.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
 
 		Bitmap bmp = BitmapFactory.decodeResource(getResources(),unit.getImage());                                                            
@@ -67,7 +69,9 @@ public class UnitCardActivity extends Activity {
 		image.setImageBitmap(bmp);		
 		
 		TextView text = (TextView)findViewById(R.id.title);
-		text.setText(unit.getTitle());
+		if(unit.getStatus() != UnitStatus.AVAILABLE)
+			text.setTextColor(Color.YELLOW);
+		text.setText(um.getShortName()+" \""+unit.getTitle()+"\"");
 		
 		TextView text5 = (TextView)findViewById(R.id.desc);
 		text5.setText(unit.getDescription());

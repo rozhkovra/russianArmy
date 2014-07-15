@@ -24,7 +24,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>            
+            </intent-filter>
         </activity>
         <activity
             android:name="ru.smallmazila.russianarmy.AirLogoActivity"
@@ -33,7 +33,7 @@
         <activity
             android:name="ru.smallmazila.russianarmy.EarthLogoActivity"
             android:label="@string/title_activity_earth_logo" >
-        </activity>        
+        </activity>
         <activity
             android:name="ru.smallmazila.russianarmy.TypesActivity"
             android:label="@string/title_activity_types" >
@@ -51,6 +51,10 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_unit_card"
             android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="ru.smallmazila.russianarmy.OtherLogoActivity"
+            android:label="@string/title_activity_other_logo" >
         </activity>
     </application>
 

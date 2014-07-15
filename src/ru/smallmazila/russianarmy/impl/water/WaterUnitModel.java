@@ -8,11 +8,19 @@ import ru.smallmazila.russianarmy.model.UnitModel;
 
 public class WaterUnitModel implements UnitModel {
 	protected String name;
+	protected String shortName;	
+	protected String shortDesc;
 	protected Map<Long,Unit> units = new HashMap<Long, Unit>();
 		
 	public WaterUnitModel(String name) {
 		super();
 		this.name = name;
+	}
+
+	public WaterUnitModel(String name, String shortName, String shortDesc) {
+		this(name);
+		this.shortName = shortName;
+		this.shortDesc = shortDesc;
 	}
 
 	@Override
@@ -43,4 +51,13 @@ public class WaterUnitModel implements UnitModel {
 		return this.units;
 	}
 
+	public String getShortName() {
+		return shortName;
+	}
+
+	public String getShortDesc() {
+		return shortDesc;
+	}
+
+	
 }

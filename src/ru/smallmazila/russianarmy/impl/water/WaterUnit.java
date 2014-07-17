@@ -2,6 +2,7 @@ package ru.smallmazila.russianarmy.impl.water;
 
 import java.util.List;
 
+import android.content.res.AssetFileDescriptor;
 import ru.smallmazila.russianarmy.model.Tth;
 import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.model.UnitModel;
@@ -19,13 +20,15 @@ public class WaterUnit implements Unit {
 	protected WeaponList weapons;
 	protected UnitSize size;
 	protected UnitStatus status;
-	protected int image;
+	protected String image;
 	protected UnitModel unitModel;
 	protected Flot flot;
 	protected String number;
+	protected String logo;
 		
 	public WaterUnit(long id, String title, String description, Tth tth,
-			WeaponList weapons, UnitSize size, UnitStatus status, int image, Flot flot, String number) {
+			WeaponList weapons, UnitSize size, UnitStatus status, String image
+			, Flot flot, String number, String logo) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -37,6 +40,7 @@ public class WaterUnit implements Unit {
 		this.image = image;
 		this.flot = flot;
 		this.number = number;
+		this.logo = logo;
 	}
 
 	@Override
@@ -76,7 +80,7 @@ public class WaterUnit implements Unit {
 	}
 
 	@Override
-	public int getImage() {
+	public String getImage() {
 		// TODO Auto-generated method stub
 		return image;
 	}
@@ -113,5 +117,18 @@ public class WaterUnit implements Unit {
 
 	public void setNumber(String number) {
 		this.number = number;
-	}	
+	}
+
+	public String getLogo() {
+		if(!"empty".equals(logo))			
+			return logo;
+		else
+			return image;
+	}
+
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+	
+	
 }

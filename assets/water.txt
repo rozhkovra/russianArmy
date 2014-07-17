@@ -1,0 +1,691 @@
+Chapter
+Авианосец (АВ)
+
+UnitModel
+11435
+ТАКР
+Тяжелый авианесущий крейсер
+
+Weapons
+Weapon
+Гранит
+12
+ROCKET
+Weapon
+Удав-1
+60
+ROCKET
+Weapon
+Клинок
+192
+ZRK
+Weapon
+Каштан
+256
+ZRK
+
+Tth
+29
+45
+1960
+200000
+
+UnitSize
+302.3
+72.3
+9.14
+43000
+
+Unit
+Адмирал флота Советского Союза Кузнецов
+"Адмирал флота Советского Союза Кузнецов" - тяжелый авианесущий крейсер проекта 11435, единственный авианосец России.
+AVAILABLE
+aircraft_carrier_kuznetsov.jpg
+Северный флот
+063
+empty
+
+Chapter
+Ракетные крейсера
+
+UnitModel
+1144
+ТАРКР
+Тяжелый атомный ракетный крейсер
+
+Weapons
+Weapon
+АК-130
+1
+ARTILLERY
+Weapon
+АК-630АД
+8
+ARTILLERY
+Weapon
+П-700 "Гранит"
+20
+ROCKET
+Weapon
+С-300Ф "Форт"
+96
+ZRK
+Weapon
+4К33 "Оса-М"
+40
+ZRK
+Weapon
+РБУ-6000
+12
+BOMB
+Weapon
+РБУ-1000 "Смерч-3"
+12
+BOMB
+Weapon
+ПЛР "Водопад-НК"
+20
+TORPEDO
+
+Tth
+31
+0
+727
+140000
+
+UnitSize
+252
+28.5
+9.1
+26190
+
+Unit
+Адмирал Лазарев
+"Адмирал Лазарев" - тяжелый атомный ракетный крейсер проекта 1144 "Орлан"
+REPAIR
+orlan_lazarev.jpg
+Тихоокеанский флот
+019
+empty
+
+UnitModel
+11442
+ТАРКР
+Тяжелый атомный ракетный крейсер
+
+Weapons
+Weapon
+АК-130
+1
+ARTILLERY
+Weapon
+П-700 "Гранит"
+20
+ROCKET  
+Weapon
+ПЛР "Водопад-НК"
+20
+TORPEDO
+Weapon
+РБУ-12000
+10
+BOMB
+Weapon
+РБУ-1000 "Смерч-3"
+12
+BOMB
+Weapon
+С-300Ф "Форт"
+96
+ZRK
+Weapon
+4К33 "Оса-М / МА"
+40
+ZRK
+Weapon
+3М87 "Кортик"
+6
+ZRK
+
+Tth
+32
+0
+727
+140000
+
+UnitSize
+252
+28.5
+9.1
+26190
+	    				
+Unit
+Адмирал Нахимов
+"Адмирал Нахимов" - тяжелый атомный ракетный крейсер проекта 11442
+REPAIR
+p11442_nahimov.jpg
+Северный флот
+080
+empty
+
+Weapons
+Weapon
+АК-130
+1
+ARTILLERY
+Weapon
+Гранит
+20
+ROCKET
+Weapon
+С-300Ф
+48
+ZRK
+Weapon
+С-300ФМ
+46
+ZRK
+Weapon
+Кинжал
+128
+ZRK
+Weapon
+3М87 "Каштан"
+144
+ZRK
+Weapon
+РПК-6М "Водопад" 533 мм
+20
+TORPEDO
+Weapon
+РКПТЗ-1 "Удав-1М"
+40
+ANTITORPEDO
+Weapon
+РБУ-12000
+1
+BOMB
+Weapon
+РБУ-1000 "Смерч-3"
+2
+BOMB
+
+Tth
+31
+0
+655
+140000
+
+UnitSize
+251.1
+28.5
+10.3
+25860
+
+Unit
+Петр Великий
+"Петр Великий" - тяжелый атомный ракетный крейсер проекта 11442, флагман Северного флота ВМФ РФ, крупнейший в мире неавианесущий ударный корабль (на 2008 год). 
+AVAILABLE
+p11442_petr_velikiy.jpg
+Северный флот
+099
+empty
+
+UnitModel
+1164
+РКР
+Ракетный крейсер
+
+Weapons
+Weapon
+П-1000 "Вулкан"
+16
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+6
+ARTILLERY
+Weapon
+С-300Ф Риф
+64
+ZRK
+Weapon
+"Оса-МА"
+48
+ZRK
+Weapon
+533 мм
+2
+TORPEDO
+Weapon
+РБУ-6000
+2
+BOMB
+
+Tth
+32
+30
+510
+100000
+
+UnitSize
+186.4
+20.8
+8.4
+11490
+
+Unit
+Москва
+"Москва" - ракетный крейсер, головной корабль проекта 1164 "Атлант" 
+AVAILABLE
+atlant_moskva.jpg
+Черноморский флот
+121
+empty
+
+
+Weapons
+Weapon
+П-500 "Базальт"
+16
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+6
+ARTILLERY
+Weapon
+С-300Ф Риф
+64
+ZRK
+Weapon
+"Оса-МА"
+48
+ZRK
+Weapon
+533 мм
+2
+TORPEDO
+Weapon
+РБУ-6000
+2
+BOMB
+		
+Tth
+32
+30
+480
+100000
+
+UnitSize
+186.4
+20.8
+8.4
+11490
+
+Unit
+"Варяг"
+"Варяг" - ракетный крейсер проекта 1164 "Атлант" 
+AVAILABLE
+atlant_variag.jpg
+Тихоокеанский флот
+011
+empty
+
+Weapons
+Weapon
+П-500 "Базальт"
+16
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+6
+ARTILLERY
+Weapon
+С-300Ф Риф
+64
+ZRK
+Weapon
+"Оса-МА"
+48
+ZRK
+Weapon
+533 мм
+10
+TORPEDO
+Weapon
+РБУ-6000
+2
+BOMB
+
+Tth
+32
+30
+476
+100000
+
+UnitSize
+186.4
+20.8
+7.6
+11280
+				
+Unit
+Маршал Устинов
+"Маршал Устинов" - ракетный крейсер проекта 1164 
+REPAIR
+atlant_marshal_ustinov.jpg
+Северный флот
+055
+empty
+
+Chapter
+С баллистическими ракетами (ПЛАРБ)
+
+UnitModel
+955
+АРПКCН
+Атомный ракетный подводный крейсер стратегического назначения
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+12
+BALLISTIC_ROCKET
+								
+Tth
+29
+90
+107
+250000
+
+UnitSize
+160
+13.5
+10
+24000
+
+Unit
+Юрий Долгорукий
+Атомный ракетный подводный крейсер стратегического назначения "Юрий Долгорукий"
+AVAILABLE
+submarine_borei_955_yuri_dolgorukii.jpg
+Северный флот
+К-535
+submarine_borei_955_yuri_dolgorukii_logo.jpg
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+16
+BALLISTIC_ROCKET
+				
+Tth
+29
+90
+107
+250000
+
+UnitSize
+170
+13.5
+10
+24000
+			
+Unit
+Александр Невский
+"Александр Невский" - атомный ракетный подводный крейсер стратегического назначения четвертого поколения проекта 955 "Борей".
+BUILD
+submarine_borei_955_aleksandr_nevskiy.jpg
+Северный флот
+К-550
+submarine_borei_955_aleksandr_nevskiy_logo.jpg
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+16
+BALLISTIC_ROCKET
+
+Tth
+29
+90
+107
+250000
+			
+UnitSize
+170
+13.5
+10
+24000
+
+Unit
+Владимир Мономах
+"Владимир Мономах" - атомный ракетный подводный крейсер стратегического назначения четвертого поколения проекта 955 "Борей".
+BUILD
+submarine_borei_955_vladimir_monomah.jpg
+Северный флот
+К-551
+submarine_borei_955_vladimir_monomah_logo.jpg
+
+UnitModel
+955А
+АРПКCН
+Атомный ракетный подводный крейсер стратегического назначения
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+16
+BALLISTIC_ROCKET
+
+Tth
+29
+90
+107
+250000
+			
+UnitSize
+170
+13.5
+10
+24000
+
+Unit
+Князь Владимир
+"Князь Владимир" - атомный ракетный подводный крейсер стратегического назначения четвертого поколения проекта 955 "Борей".
+BUILD
+submarine_borei_955_knyaz_vladimir.jpg
+Северный флот
+
+submarine_borei_955_knyaz_vladimir_logo.jpg
+
+UnitModel
+941
+АРПКCН
+Атомный ракетный подводный крейсер стратегического назначения
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+20
+BALLISTIC_ROCKET
+
+Tth
+27
+180
+160
+100000
+			
+UnitSize
+172
+23.3
+11
+48000
+
+Unit
+Дмитрий Донской
+ТК-208 "Дмитрий Донской" - тяжелый ракетный подводный крейсер стратегического назначения проекта 941 "Акула", головной корабль серии. 
+AVAILABLE
+submarine_akula_941_dmitiy_donskoy.jpg
+Северный флот
+ТК-208
+submarine_akula_941_dmitiy_donskoy_logo.jpg
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+20
+BALLISTIC_ROCKET
+
+Tth
+27
+180
+160
+100000
+			
+UnitSize
+172
+23.3
+11
+48000
+
+Unit
+Архангельск
+ТК-17 "Архангельск" - тяжелый ракетный подводный крейсер стратегического назначения проекта 941 "Акула". 
+REPAIR
+submarine_akula_941_arhangelsk.jpg
+Северный флот
+ТК-17
+submarine_akula_941_arhangelsk_logo.jpg
+
+Weapons
+Weapon
+533 мм
+6
+TORPEDO
+Weapon
+Булава
+20
+BALLISTIC_ROCKET
+
+Tth
+27
+180
+160
+100000
+			
+UnitSize
+172
+23.3
+11
+48000
+
+Unit
+Северсталь
+ТК-20 "Северсталь" - тяжелый ракетный подводный крейсер стратегического назначения проекта 941 "Акула", последняя лодка серии. 
+REPAIR
+submarine_akula_941_severstal.jpg
+Северный флот
+ТК-20
+submarine_akula_941_severstal_logo.jpg
+
+
+
+Chapter
+С крылатыми ракетами (ПЛАРК)
+
+UnitModel
+885
+МАПЛ
+Многоцелевая атомная подводная лодка с крылатыми ракетами
+
+Weapons 
+Weapon
+533 мм
+10
+TORPEDO
+Weapon
+650 мм
+10
+TORPEDO
+Weapon
+П-100 "Оникс"
+24
+WING_ROCKET
+Weapon
+Х-35
+24
+WING_ROCKET
+Weapon
+Х-101
+24
+WING_ROCKET
+Weapon
+ЗМ-54Э
+24
+WING_ROCKET
+Weapon
+ЗМ-54Э1
+24
+WING_ROCKET
+Weapon
+ЗМ-14Э
+24
+WING_ROCKET
+
+Tth
+31
+100
+90
+0
+				
+UnitSize
+119
+13.5
+9.4
+13800
+
+Unit
+Северодвинск
+"Северодвинск" - многоцелевая атомная подводная лодка с крылатыми ракетами, головной корабль проекта 885 "Ясень"
+AVAILABLE
+submarine_yasen_885_severodvinsk.jpg
+Северный флот
+К-560
+empty

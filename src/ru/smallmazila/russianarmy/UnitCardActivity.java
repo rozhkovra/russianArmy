@@ -1,7 +1,9 @@
 package ru.smallmazila.russianarmy;
 
+import java.io.IOException;
+
+import ru.smallmazila.russianarmy.data.DataStore;
 import ru.smallmazila.russianarmy.data.Filter;
-import ru.smallmazila.russianarmy.data.MyData;
 import ru.smallmazila.russianarmy.impl.water.WaterUnit;
 import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.model.UnitModel;
@@ -55,10 +57,19 @@ public class UnitCardActivity extends Activity {
 		ImageView image = (ImageView)findViewById(R.id.imageView1);
 
 		long unitId = getIntent().getLongExtra("unitId", 0L);
-		UnitModel um = MyData.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel);
-		Unit unit = MyData.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
+		UnitModel um = DataStore.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel);
+		Unit unit = DataStore.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
 
-		Bitmap bmp = BitmapFactory.decodeResource(getResources(),unit.getImage());                                                            
+		//Bitmap bmp = BitmapFactory.decodeResource(getResources(),unit.getImage());                                                            
+		Bitmap bmp = null; 
+		try{	
+			bmp = BitmapFactory.decodeStream(getAssets().open(unit.getImage()));
+		}catch(IOException e){
+			try{
+				bmp = BitmapFactory.decodeStream(getAssets().open("rusflotlogo_800_480.jpg"));
+			}catch(IOException ie){				
+			}				
+		}
 		int iWidth = bmp.getWidth();
 		int iHeight = bmp.getHeight();
 		int newWidth = width*4/9;

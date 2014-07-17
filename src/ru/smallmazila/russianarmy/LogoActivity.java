@@ -1,7 +1,7 @@
 package ru.smallmazila.russianarmy;
 
 import ru.smallmazila.android.activity.RunUtil;
-import ru.smallmazila.russianarmy.data.MyData;
+import ru.smallmazila.russianarmy.data.DataStore;
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -20,11 +20,11 @@ public class LogoActivity extends Activity{
 	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 	            WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	    
-		MyData.initAll();
+	    DataStore.initAll(getApplicationContext().getAssets());
 	    setContentView(R.layout.activity_logo);
 		ImageView image = (ImageView)findViewById(R.id.imageView1);
 		
-	    if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+		if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
 			image.setImageResource(R.drawable.rusarmylogo_480_800);
 		else
 			image.setImageResource(R.drawable.rusarmylogo_800_480);

@@ -16,15 +16,15 @@
         <activity
             android:name="ru.smallmazila.russianarmy.LogoActivity"
             android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="ru.smallmazila.russianarmy.FlotLogoActivity"
-            android:label="@string/title_activity_flot_logo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.smallmazila.russianarmy.FlotLogoActivity"
+            android:label="@string/title_activity_flot_logo" >
         </activity>
         <activity
             android:name="ru.smallmazila.russianarmy.AirLogoActivity"

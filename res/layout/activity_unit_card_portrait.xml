@@ -5,12 +5,6 @@
     android:background="#0099cc"
     tools:context="ru.smallmazila.russianarmy.UnitCardActivity" >
 
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true" >
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,6 +21,7 @@
 				    android:layout_height="wrap_content"
 				    android:gravity="left"
 				    android:text="флот"
+					android:textStyle="italic"
 				    android:textColor="#ffffff"
 				    android:textSize="4pt"
 				    android:layout_weight="1"
@@ -40,7 +35,7 @@
 				    android:layout_weight="1"
 				    android:text="номер изделия"
 				    android:textColor="#ffffff"
-				    android:textSize="4pt"
+				    android:textSize="8pt"
 				    android:textAlignment="gravity" />
 
 			</LinearLayout>
@@ -53,7 +48,15 @@
                 android:textColor="#92D050" 
                 android:padding="3pt"
                 android:textSize="10pt"/>
-
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical">
+    
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
@@ -147,9 +150,8 @@
                 android:textColor="#ffffff"
                 android:padding="3pt"
                 android:textStyle="italic"/>
-
+</LinearLayout>            
+</ScrollView>
         </LinearLayout>
-
-    </FrameLayout>
 
 </FrameLayout>

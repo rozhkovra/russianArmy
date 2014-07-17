@@ -11,4 +11,5 @@ public interface UnitModel {
 	public Map<Long,Unit> getUnits();
 	public String getShortName();
 	public String getShortDesc();
+	public boolean logoView();
 }

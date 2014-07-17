@@ -2,7 +2,7 @@ package ru.smallmazila.russianarmy.util;
 
 import java.util.List;
 
-import ru.smallmazila.russianarmy.data.MyData;
+import ru.smallmazila.russianarmy.data.DataStore;
 import ru.smallmazila.russianarmy.model.Chapter;
 import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.model.UnitModel;
@@ -20,7 +20,7 @@ public class Util {
 	
 	public static Unit findUnitById(long id){
 		Unit unit = null;
-		for(Chapter chapter : MyData.chapters.values()){
+		for(Chapter chapter : DataStore.chapters.values()){
 			for(UnitModel um : chapter.getUnitModels().values()){
 				unit = um.getUnit(id);
 				if(unit!=null)

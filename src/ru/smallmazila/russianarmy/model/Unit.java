@@ -3,6 +3,7 @@ package ru.smallmazila.russianarmy.model;
 import java.util.List;
 
 import ru.smallmazila.russianarmy.vacabulary.UnitStatus;
+import android.content.res.AssetFileDescriptor;
 
 public interface Unit {	
 	public long getId();
@@ -11,9 +12,10 @@ public interface Unit {
 	public Tth getTth();
 	public List<Weapon> getWeapons();
 	public UnitSize getSize();
-	public int getImage();
+	public String getImage();
 	public void setUnitModel(UnitModel um);
 	public UnitModel getUnitModel();
 	public UnitStatus getStatus();
 	public String getNumber();
+	public String getLogo();
 }

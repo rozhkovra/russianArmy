@@ -7,12 +7,17 @@
     android:background="@drawable/water_background_800_480"
     tools:ignore="MergeRootFrame" >
 
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:stretchColumns="*"
         android:id="@+id/mainTable" >
     </TableLayout>
-
+</ScrollView>
 </FrameLayout>
 

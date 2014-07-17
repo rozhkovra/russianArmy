@@ -1,6 +1,6 @@
 package ru.smallmazila.russianarmy;
 
-import ru.smallmazila.russianarmy.data.MyData;
+import ru.smallmazila.russianarmy.data.DataStore;
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -18,7 +18,7 @@ public class AirLogoActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 	            WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		MyData.initFlot();
+		DataStore.initFlot(getApplicationContext().getAssets());
 	    setContentView(R.layout.activity_logo);
 		ImageView image = (ImageView)findViewById(R.id.imageView1);
 		

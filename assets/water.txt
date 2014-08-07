@@ -44,6 +44,7 @@ aircraft_carrier_kuznetsov.jpg
 Северный флот
 063
 empty
+Североморск
 
 Chapter
 Ракетные крейсера
@@ -108,6 +109,7 @@ orlan_lazarev.jpg
 019
 empty
 
+
 UnitModel
 11442
 ТАРКР
@@ -167,6 +169,7 @@ p11442_nahimov.jpg
 Северный флот
 080
 empty
+Североморск
 
 Weapons
 Weapon
@@ -230,6 +233,7 @@ p11442_petr_velikiy.jpg
 Северный флот
 099
 empty
+Североморск
 
 UnitModel
 1164
@@ -286,6 +290,7 @@ atlant_moskva.jpg
 Черноморский флот
 121
 empty
+Севастополь
 
 
 Weapons
@@ -339,6 +344,7 @@ atlant_variag.jpg
 011
 empty
 
+
 Weapons
 Weapon
 П-500 "Базальт"
@@ -390,6 +396,400 @@ atlant_marshal_ustinov.jpg
 055
 empty
 
+
+Chapter
+Эскадронные миноносцы
+
+UnitModel
+956
+ЭМ
+Эскадронный миноносец
+
+Weapons
+Weapon
+"Москит-М"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+8000
+				
+Unit
+Адмирал Ушаков
+"Адмирал Ушаков" - эсминец проекта 956. 
+AVAILABLE
+956_ushakov.jpg
+Северный флот
+434
+956_ushakov_logo.jpg
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Гремящий
+"Гремящий" - эсминец проекта 956. 
+REPAIR
+956_gremashiy.jpg
+Северный флот
+406
+956_gremashiy_logo.jpg
+
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Безбоязненный
+"Безбоязненный" - эсминец проекта 956. 
+REPAIR
+956_bezboiaznenniy.jpg
+Тихоокеанский флот
+754
+956_bezboiaznenniy_logo.jpg
+
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Боевой
+"Боевой" - эсминец проекта 956. 
+REPAIR
+956_boevoy.jpg
+Тихоокеанский флот
+720
+956_boevoy_logo.jpg
+
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Быстрый
+"Быстрый" - эсминец проекта 956. 
+REPAIR
+956_bistriy.jpg
+Тихоокеанский флот
+715
+956_bistriy_logo.jpg
+
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Беспокойный
+"Беспокойный" - эсминец проекта 956. 
+REPAIR
+956_bespokoiniy.jpg
+Балтийский флот.
+620
+956_bespokoiniy_logo.jpg
+
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Настойчивый
+"Настойчивый" - эсминец проекта 956. 
+AVAILABLE
+956_nastoichiviy.jpg
+Балтийский флот.
+610
+956_nastoichiviy_logo.jpg
+
+
+Weapons
+Weapon
+"Москит"
+8
+ROCKET
+Weapon
+АК-130
+2
+ARTILLERY
+Weapon
+АК-630
+4
+ARTILLERY
+Weapon
+"Ураган-Торнадо"
+48
+ZRK
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+РБУ-1000
+2
+BOMB
+
+Tth
+32
+30
+296
+100000
+
+UnitSize
+156.5
+17.2
+8.2
+7940
+
+Unit
+Бурный
+"Бурный" - эсминец проекта 956. 
+REPAIR
+956_burniy.jpg
+Тихоокеанский флот.
+778
+956_burniy_logo.jpg
+Фокино
+
+
+
 Chapter
 С баллистическими ракетами (ПЛАРБ)
 
@@ -428,6 +828,7 @@ submarine_borei_955_yuri_dolgorukii.jpg
 Северный флот
 К-535
 submarine_borei_955_yuri_dolgorukii_logo.jpg
+Гаджиево
 
 Weapons
 Weapon
@@ -460,6 +861,7 @@ submarine_borei_955_aleksandr_nevskiy.jpg
 К-550
 submarine_borei_955_aleksandr_nevskiy_logo.jpg
 
+
 Weapons
 Weapon
 533 мм
@@ -490,6 +892,7 @@ submarine_borei_955_vladimir_monomah.jpg
 Северный флот
 К-551
 submarine_borei_955_vladimir_monomah_logo.jpg
+
 
 UnitModel
 955А
@@ -527,6 +930,7 @@ submarine_borei_955_knyaz_vladimir.jpg
 
 submarine_borei_955_knyaz_vladimir_logo.jpg
 
+
 UnitModel
 941
 АРПКCН
@@ -562,6 +966,7 @@ submarine_akula_941_dmitiy_donskoy.jpg
 Северный флот
 ТК-208
 submarine_akula_941_dmitiy_donskoy_logo.jpg
+Западная Лица
 
 Weapons
 Weapon
@@ -593,6 +998,7 @@ submarine_akula_941_arhangelsk.jpg
 Северный флот
 ТК-17
 submarine_akula_941_arhangelsk_logo.jpg
+Северодвинск
 
 Weapons
 Weapon
@@ -624,7 +1030,44 @@ submarine_akula_941_severstal.jpg
 Северный флот
 ТК-20
 submarine_akula_941_severstal_logo.jpg
+Северодвинск
 
+
+UnitModel
+09787
+АРПКCН
+Атомный ракетный подводный крейсер стратегического назначения
+
+Weapons
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+Р-29РМ
+16
+BALLISTIC_ROCKET
+
+Tth
+24
+90
+140
+0
+			
+UnitSize
+167.4
+11.7
+8.8
+18200
+
+Unit
+Подмосковье
+БС-64 "Подмосковье" - советский и российский атомный ракетный подводный крейсер стратегического назначения проекта 667БДРМ "Дельфин" (Delta-IV в терминологии НАТО). Бортовой номер 815. Переоборудуется в проект 09787.  
+REPAIR
+submarine_delphin_09787_podmoskovie.jpg
+Северный флот
+БС-64
+submarine_delphin_09787_podmoskovie_logo.jpg
 
 
 Chapter
@@ -671,8 +1114,8 @@ WING_ROCKET
 
 Tth
 31
-100
 90
+100
 0
 				
 UnitSize
@@ -689,3 +1132,299 @@ submarine_yasen_885_severodvinsk.jpg
 Северный флот
 К-560
 empty
+
+
+UnitModel
+949А
+АПЛ
+Атомная подводная лодка
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+108
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Воронеж
+К-119 "Воронеж" - атомная подводная лодка проекта 949А "Антей".
+AVAILABLE
+submarine_antei_949A_voronezh.jpg
+Северный флот
+К-119
+submarine_antei_949A_voronezh_logo.jpg
+Заозерск
+
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+108
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Орел
+К-266 "Орел" - атомная подводная лодка проекта 949А "Антей".
+REPAIR
+submarine_antei_949A_orel.jpg
+Северный флот
+К-266
+submarine_antei_949A_orel_logo.jpg
+Заозерск
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+107
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Смоленск
+К-410 "Смоленск" - атомная подводная лодка проекта 949А "Антей".
+AVAILABLE
+submarine_antei_949A_smolensk.jpg
+Северный флот
+К-410
+submarine_antei_949A_smolensk_logo.jpg
+Заозерск
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+107
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Тверь
+К-456 "Тверь" - атомная подводная лодка проекта 949А "Антей". 
+AVAILABLE
+submarine_antei_949A_tver.jpg
+Тихоокеанский флот
+К-456
+submarine_antei_949A_tver_logo.jpg
+Бухта Крашенинникова
+
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+107
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Иркутск
+К-132 "Иркутск" - атомная подводная лодка проекта 949А "Антей". 
+REPAIR
+submarine_antei_949A_irkutsk.jpg
+Тихоокеанский флот
+К-132
+submarine_antei_949A_irkutsk_logo.jpg
+Бухта Крашенинникова
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+107
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Омск
+К-186 "Омск" - атомная подводная лодка проекта 949А "Антей".  
+AVAILABLE
+submarine_antei_949A_omsk.jpg
+Тихоокеанский флот
+К-186
+submarine_antei_949A_omsk_logo.jpg
+Бухта Крашенинникова
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+107
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Томск
+К-150 "Томск" - атомная подводная лодка проекта 949А "Антей".  
+AVAILABLE
+submarine_antei_949A_tomsk.jpg
+Тихоокеанский флот
+К-150
+submarine_antei_949A_tomsk_logo.jpg
+Бухта Крашенинникова
+
+Weapons 
+Weapon
+533 мм
+4
+TORPEDO
+Weapon
+650 мм
+2
+TORPEDO
+Weapon
+П-700 "Гранит"
+24
+WING_ROCKET
+
+Tth
+33
+120
+107
+500000
+				
+UnitSize
+154
+18.2
+9.2
+23860
+
+Unit
+Челябинск
+К-442 "Челябинск" - атомная подводная лодка проекта 949А "Антей".  
+REPAIR
+submarine_antei_949A_cheliabinsk.jpg
+Тихоокеанский флот
+К-442
+submarine_antei_949A_cheliabinsk_logo.jpg
+Бухта Крашенинникова

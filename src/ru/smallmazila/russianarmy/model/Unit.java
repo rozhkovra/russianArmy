@@ -18,4 +18,5 @@ public interface Unit {
 	public UnitStatus getStatus();
 	public String getNumber();
 	public String getLogo();
+	public String getBase();
 }

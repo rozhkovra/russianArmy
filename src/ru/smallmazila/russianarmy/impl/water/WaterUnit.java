@@ -25,10 +25,11 @@ public class WaterUnit implements Unit {
 	protected Flot flot;
 	protected String number;
 	protected String logo;
+	protected String base;
 		
 	public WaterUnit(long id, String title, String description, Tth tth,
 			WeaponList weapons, UnitSize size, UnitStatus status, String image
-			, Flot flot, String number, String logo) {
+			, Flot flot, String number, String logo, String base) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -41,6 +42,7 @@ public class WaterUnit implements Unit {
 		this.flot = flot;
 		this.number = number;
 		this.logo = logo;
+		this.base = base;
 	}
 
 	@Override
@@ -129,6 +131,12 @@ public class WaterUnit implements Unit {
 	public void setLogo(String logo) {
 		this.logo = logo;
 	}
-	
-	
+
+	public String getBase() {
+		return base;
+	}
+
+	public void setBase(String base) {
+		this.base = base;
+	}	
 }

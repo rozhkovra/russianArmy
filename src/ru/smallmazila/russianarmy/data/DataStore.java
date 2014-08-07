@@ -104,6 +104,7 @@ public class DataStore {
 						, in.readLine()
 						, new Flot(in.readLine())
 						, in.readLine()
+						, in.readLine()
 						, in.readLine())
 				);
 			}

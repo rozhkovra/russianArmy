@@ -2,20 +2,24 @@ package ru.smallmazila.russianarmy;
 
 import java.io.IOException;
 
+import ru.smallmazila.android.activity.RunUtil;
 import ru.smallmazila.russianarmy.data.DataStore;
 import ru.smallmazila.russianarmy.data.Filter;
 import ru.smallmazila.russianarmy.impl.water.WaterUnit;
 import ru.smallmazila.russianarmy.model.Unit;
 import ru.smallmazila.russianarmy.model.UnitModel;
+import ru.smallmazila.russianarmy.photo.gallery.PhotoActivity;
 import ru.smallmazila.russianarmy.util.Util;
 import ru.smallmazila.russianarmy.vacabulary.UnitStatus;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Display;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -58,7 +62,7 @@ public class UnitCardActivity extends Activity {
 
 		long unitId = getIntent().getLongExtra("unitId", 0L);
 		UnitModel um = DataStore.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel);
-		Unit unit = DataStore.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
+		final Unit unit = DataStore.chapters.get(Filter.chapterId).getUnitModels().get(Filter.unitModel).getUnit(unitId);
 
 		//Bitmap bmp = BitmapFactory.decodeResource(getResources(),unit.getImage());                                                            
 		Bitmap bmp = null; 
@@ -77,7 +81,17 @@ public class UnitCardActivity extends Activity {
 			newWidth = width*2/3;
 		int newHeight = iHeight*newWidth/iWidth;
 		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
-		image.setImageBitmap(bmp);		
+		image.setImageBitmap(bmp);
+		image.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent();
+				i.putExtra("unitNum", unit.getNumber());
+				RunUtil.runArgsActivity(UnitCardActivity.this, PhotoActivity.class, i);
+			}
+		});
 		
 		TextView text = (TextView)findViewById(R.id.title);
 		if(unit.getStatus() != UnitStatus.AVAILABLE)

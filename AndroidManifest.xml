@@ -56,6 +56,10 @@
             android:name="ru.smallmazila.russianarmy.OtherLogoActivity"
             android:label="@string/title_activity_other_logo" >
         </activity>
+        <activity
+            android:name="ru.smallmazila.russianarmy.photo.gallery.PhotoActivity"
+            android:label="@string/title_activity_photo" >
+        </activity>
     </application>
 
 </manifest>

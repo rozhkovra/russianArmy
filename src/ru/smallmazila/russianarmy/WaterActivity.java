@@ -65,7 +65,7 @@ public class WaterActivity extends Activity {
 		ImageView iView = new ImageView(this);
 
 	    Bitmap bmp;
-	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.aircraft_carrier_chapter);//image is your image                                                            
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.aircraft_carrier_chapter_1);//image is your image                                                            
 		int iWidth = bmp.getWidth();
 		int iHeight = bmp.getHeight();
 		int newWidth = width/4;
@@ -88,7 +88,7 @@ public class WaterActivity extends Activity {
 
 		iView = new ImageView(this);
 
-	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.submarine_ballistic_chapter);//image is your image                                                            
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.submarine_ballistic_chapter_1);//image is your image                                                            
 		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
 		iView.setImageBitmap(bmp);		
 
@@ -98,8 +98,8 @@ public class WaterActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent i = new Intent();
-				i.putExtra("chapterId", 3L);
-				Filter.chapterId=3L;
+				i.putExtra("chapterId", 4L);
+				Filter.chapterId=4L;
 				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
 			}
 		});
@@ -111,7 +111,7 @@ public class WaterActivity extends Activity {
 		
 		iView = new ImageView(this);
 
-	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.craiser_chapter);//image is your image                                                            
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.craiser_chapter_1);//image is your image                                                            
 		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
 		iView.setImageBitmap(bmp);		
 
@@ -136,13 +136,9 @@ public class WaterActivity extends Activity {
 		
 		row = new TableRow(this);
 		
-		view = new TextView(this);
-		view.setText("");
-		row.addView(view);
-
 		iView = new ImageView(this);
 
-	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.yasen_855);//image is your image                                                            
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.esminec_chapter);//image is your image                                                            
 		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
 		iView.setImageBitmap(bmp);		
 
@@ -152,8 +148,27 @@ public class WaterActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent i = new Intent();
-				i.putExtra("chapterId", 4L);
-				Filter.chapterId=4L;
+				i.putExtra("chapterId", 3L);
+				Filter.chapterId=3L;
+				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
+			}
+		});
+		row.addView(iView);
+
+		iView = new ImageView(this);
+
+	    bmp=BitmapFactory.decodeResource(getResources(),R.drawable.submarine_wing_chapter);//image is your image                                                            
+		bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
+		iView.setImageBitmap(bmp);		
+
+		iView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent();
+				i.putExtra("chapterId", 5L);
+				Filter.chapterId=5L;
 				RunUtil.runArgsActivity(WaterActivity.this, ChapterActivity.class, i);
 			}
 		});

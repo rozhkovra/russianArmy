@@ -40,4 +40,9 @@ public class Util {
 	public static String getAutonomy(int a) {
 		return (a==0)?"автономен":a+"";
 	}
+
+	public static String convertNum2Path(String unitNum) {
+		// TODO Auto-generated method stub
+		return unitNum.replace("-", "");
+	}
 }

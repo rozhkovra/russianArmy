@@ -20,13 +20,13 @@ import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class ChapterActivity extends Activity {
-	private boolean logoView = false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -38,10 +38,11 @@ public class ChapterActivity extends Activity {
 		Chapter chapter = DataStore.chapters.get(getIntent().getLongExtra("chapterId",0L));
 		setTitle(chapter.getName());
 		
-		TableLayout table = (TableLayout)findViewById(R.id.mainTable);
+		ScrollView sView = (ScrollView)findViewById(R.id.container);		
 		if(chapter instanceof WaterChapter)
-			table.setBackgroundResource(R.drawable.water_background_800_480);
+			sView.setBackgroundResource(R.drawable.water_background_800_480);
 
+		TableLayout table = (TableLayout)findViewById(R.id.mainTable);
 		for(String um : chapter.getUnitModels().keySet()){
 			TableRow row = new TableRow(this);
 		
@@ -52,10 +53,7 @@ public class ChapterActivity extends Activity {
 			
 			table.addView(row);
 			
-			if(!logoView)
-				createTable(chapter.getUnitModel(um), table);
-			else
-				createLogoTable(chapter.getUnitModel(um), table);
+			createTable(chapter.getUnitModel(um), table);
 		}
 
 
@@ -88,51 +86,4 @@ public class ChapterActivity extends Activity {
 		}
 
 	}
-	
-	private void createLogoTable(UnitModel um, TableLayout table){
-	    Display display = getWindowManager().getDefaultDisplay(); 
-		int width = display.getWidth();  // deprecated
-		int height = display.getHeight();  // deprecated
-
-		TableRow row = null;
-		int k = 0;
-		for (Unit unit : um.getUnits().values()){
-			if(k%2 == 0){
-				row = new TableRow(this);
-				table.addView(row);
-			}
-			ImageView iView = new ImageView(this);
-			Bitmap bmp = null; 
-			try{	
-				bmp = BitmapFactory.decodeStream(getAssets().open(unit.getLogo()));
-			}catch(IOException e){
-			}
-//			int iWidth = bmp.getWidth();
-//			int iHeight = bmp.getHeight();
-			int newWidth = width/2;
-			//int newHeight = iHeight*newWidth/iWidth;
-			int newHeight = newWidth;
-			bmp=Bitmap.createScaledBitmap(bmp, newWidth, newHeight, true);
-			iView.setImageBitmap(bmp);		
-			iView.setId((int)unit.getId());
-			iView.setOnClickListener(new View.OnClickListener() {			
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					Unit unit = Util.findUnitById((long)v.getId());
-					if(unit!=null){
-						Intent i = new Intent();
-						i.putExtra("unitId", unit.getId());
-						Filter.unitId = unit.getId();
-						Filter.unitModel = unit.getUnitModel().getName();
-						RunUtil.runArgsActivity(ChapterActivity.this, UnitCardActivity.class, i);
-					}else
-						Toast.makeText(getApplicationContext(), "Error of getting unit!", Toast.LENGTH_SHORT);
-				}
-			});
-			row.addView(iView);				
-			k++;
-		}
-	}
-
 }

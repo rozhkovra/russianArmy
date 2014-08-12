@@ -29,17 +29,37 @@ public class LogoActivity extends Activity{
 		else
 			image.setImageResource(R.drawable.rusarmylogo_800_480);
 		
-		image.setOnClickListener(new View.OnClickListener() {
+/*		image.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				//RunUtil.runEmptyActivity(LogoActivity.this, TypesActivity.class);
-				RunUtil.runEmptyActivity(LogoActivity.this, TypesActivity.class);
 			}
-		});
+		});		
+*/
+        Thread background = new Thread() {
+            public void run() {
+                 
+                try {
+                    // Thread will sleep for 5 seconds
+                    sleep(3*1000);
+                     
+                    // After 5 seconds redirect to another intent
+                    RunUtil.runEmptyActivity(LogoActivity.this, TypesActivity.class);                     
+                    //Remove activity
+                    finish();
+                     
+                } catch (Exception e) {
+                 
+                }
+            }
+        };         
+        // start thread
+        background.start();
+        
 		RunUtil.createFliper(this).fromLayout = (LinearLayout)findViewById(R.id.mainLayout);
-
+		
 	}
 
 	@Override

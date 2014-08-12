@@ -57,18 +57,5 @@ public class WaterUnitModel implements UnitModel {
 
 	public String getShortDesc() {
 		return shortDesc;
-	}
-
-	@Override
-	public boolean logoView() {
-		// TODO Auto-generated method stub
-		for(Unit unit : units.values()){
-			if(unit.getLogo()==null || "empty".equals(unit.getLogo()))
-				return false;
-		}
-		return true;
-	}
-
-
-	
+	}	
 }

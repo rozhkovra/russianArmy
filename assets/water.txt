@@ -43,7 +43,6 @@ AVAILABLE
 aircraft_carrier_kuznetsov.jpg
 Северный флот
 063
-empty
 Североморск
 
 Chapter
@@ -107,7 +106,7 @@ REPAIR
 orlan_lazarev.jpg
 Тихоокеанский флот
 019
-empty
+
 
 
 UnitModel
@@ -168,7 +167,6 @@ REPAIR
 p11442_nahimov.jpg
 Северный флот
 080
-empty
 Североморск
 
 Weapons
@@ -232,7 +230,6 @@ AVAILABLE
 p11442_petr_velikiy.jpg
 Северный флот
 099
-empty
 Североморск
 
 UnitModel
@@ -289,7 +286,6 @@ AVAILABLE
 atlant_moskva.jpg
 Черноморский флот
 121
-empty
 Севастополь
 
 
@@ -342,7 +338,6 @@ AVAILABLE
 atlant_variag.jpg
 Тихоокеанский флот
 011
-empty
 
 
 Weapons
@@ -394,7 +389,6 @@ REPAIR
 atlant_marshal_ustinov.jpg
 Северный флот
 055
-empty
 
 
 Chapter
@@ -450,7 +444,7 @@ AVAILABLE
 956_ushakov.jpg
 Северный флот
 434
-956_ushakov_logo.jpg
+
 
 Weapons
 Weapon
@@ -494,10 +488,9 @@ Unit
 Гремящий
 "Гремящий" - эсминец проекта 956. 
 REPAIR
-956_gremashiy.jpg
+956_gremiashii.jpg
 Северный флот
 406
-956_gremashiy_logo.jpg
 
 
 Weapons
@@ -542,10 +535,9 @@ Unit
 Безбоязненный
 "Безбоязненный" - эсминец проекта 956. 
 REPAIR
-956_bezboiaznenniy.jpg
+956_bezboiaznennii.jpg
 Тихоокеанский флот
 754
-956_bezboiaznenniy_logo.jpg
 
 
 Weapons
@@ -593,7 +585,6 @@ REPAIR
 956_boevoy.jpg
 Тихоокеанский флот
 720
-956_boevoy_logo.jpg
 
 
 Weapons
@@ -638,10 +629,9 @@ Unit
 Быстрый
 "Быстрый" - эсминец проекта 956. 
 REPAIR
-956_bistriy.jpg
+956_bistrii.jpg
 Тихоокеанский флот
 715
-956_bistriy_logo.jpg
 
 
 Weapons
@@ -686,10 +676,9 @@ Unit
 Беспокойный
 "Беспокойный" - эсминец проекта 956. 
 REPAIR
-956_bespokoiniy.jpg
+956_bespokoinii.jpg
 Балтийский флот.
 620
-956_bespokoiniy_logo.jpg
 
 
 Weapons
@@ -734,10 +723,9 @@ Unit
 Настойчивый
 "Настойчивый" - эсминец проекта 956. 
 AVAILABLE
-956_nastoichiviy.jpg
+956_nastoichivii.jpg
 Балтийский флот.
 610
-956_nastoichiviy_logo.jpg
 
 
 Weapons
@@ -782,10 +770,9 @@ Unit
 Бурный
 "Бурный" - эсминец проекта 956. 
 REPAIR
-956_burniy.jpg
+956_burnii.jpg
 Тихоокеанский флот.
 778
-956_burniy_logo.jpg
 Фокино
 
 
@@ -826,7 +813,7 @@ Unit
 AVAILABLE
 submarine_borei_955_yuri_dolgorukii.jpg
 Северный флот
-К-535
+K-535
 submarine_borei_955_yuri_dolgorukii_logo.jpg
 Гаджиево
 
@@ -858,7 +845,7 @@ Unit
 BUILD
 submarine_borei_955_aleksandr_nevskiy.jpg
 Северный флот
-К-550
+K-550
 submarine_borei_955_aleksandr_nevskiy_logo.jpg
 
 
@@ -890,7 +877,7 @@ Unit
 BUILD
 submarine_borei_955_vladimir_monomah.jpg
 Северный флот
-К-551
+K-551
 submarine_borei_955_vladimir_monomah_logo.jpg
 
 
@@ -964,7 +951,7 @@ Unit
 AVAILABLE
 submarine_akula_941_dmitiy_donskoy.jpg
 Северный флот
-ТК-208
+TK-208
 submarine_akula_941_dmitiy_donskoy_logo.jpg
 Западная Лица
 
@@ -996,7 +983,7 @@ Unit
 REPAIR
 submarine_akula_941_arhangelsk.jpg
 Северный флот
-ТК-17
+TK-17
 submarine_akula_941_arhangelsk_logo.jpg
 Северодвинск
 
@@ -1028,7 +1015,7 @@ Unit
 REPAIR
 submarine_akula_941_severstal.jpg
 Северный флот
-ТК-20
+TK-20
 submarine_akula_941_severstal_logo.jpg
 Северодвинск
 
@@ -1130,7 +1117,7 @@ Unit
 AVAILABLE
 submarine_yasen_885_severodvinsk.jpg
 Северный флот
-К-560
+K-560
 empty
 
 
@@ -1171,7 +1158,7 @@ Unit
 AVAILABLE
 submarine_antei_949A_voronezh.jpg
 Северный флот
-К-119
+K-119
 submarine_antei_949A_voronezh_logo.jpg
 Заозерск
 
@@ -1208,7 +1195,7 @@ Unit
 REPAIR
 submarine_antei_949A_orel.jpg
 Северный флот
-К-266
+K-266
 submarine_antei_949A_orel_logo.jpg
 Заозерск
 
@@ -1244,7 +1231,7 @@ Unit
 AVAILABLE
 submarine_antei_949A_smolensk.jpg
 Северный флот
-К-410
+K-410
 submarine_antei_949A_smolensk_logo.jpg
 Заозерск
 
@@ -1280,7 +1267,7 @@ Unit
 AVAILABLE
 submarine_antei_949A_tver.jpg
 Тихоокеанский флот
-К-456
+K-456
 submarine_antei_949A_tver_logo.jpg
 Бухта Крашенинникова
 
@@ -1317,7 +1304,7 @@ Unit
 REPAIR
 submarine_antei_949A_irkutsk.jpg
 Тихоокеанский флот
-К-132
+K-132
 submarine_antei_949A_irkutsk_logo.jpg
 Бухта Крашенинникова
 
@@ -1353,7 +1340,7 @@ Unit
 AVAILABLE
 submarine_antei_949A_omsk.jpg
 Тихоокеанский флот
-К-186
+K-186
 submarine_antei_949A_omsk_logo.jpg
 Бухта Крашенинникова
 
@@ -1389,7 +1376,7 @@ Unit
 AVAILABLE
 submarine_antei_949A_tomsk.jpg
 Тихоокеанский флот
-К-150
+K-150
 submarine_antei_949A_tomsk_logo.jpg
 Бухта Крашенинникова
 
@@ -1425,6 +1412,6 @@ Unit
 REPAIR
 submarine_antei_949A_cheliabinsk.jpg
 Тихоокеанский флот
-К-442
+K-442
 submarine_antei_949A_cheliabinsk_logo.jpg
 Бухта Крашенинникова

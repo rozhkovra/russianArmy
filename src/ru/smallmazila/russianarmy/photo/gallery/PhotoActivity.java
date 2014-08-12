@@ -5,6 +5,7 @@ import java.util.List;
 
 import ru.smallmazila.russianarmy.R;
 import ru.smallmazila.russianarmy.photo.gallery.adapter.PhotoPagerAdapter;
+import ru.smallmazila.russianarmy.util.Util;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -33,18 +34,21 @@ public class PhotoActivity extends Activity {
 		LayoutInflater inflater = LayoutInflater.from(this);
 		List<View> pages = new ArrayList<View>();
 		String unitNum = getIntent().getStringExtra("unitNum");
+		String unitName = getIntent().getStringExtra("unitName");
 //		imageId = getIntent().getExtras().getInt("imageId");
 //		mCurrentImagePos = getIntent().getExtras().getInt("currentImagePos");
 //		mGalleryPos = getIntent().getExtras().getInt("galleryPos");
+		setTitle("Фотогалерея "+unitName);
 		
 	
 		View page;
 		ImageView image;
+		String folder = Util.convertNum2Path(unitNum);
 		try{
-			for(String iPath : getAssets().list(unitNum)){
+			for(String iPath : getAssets().list(folder)){
 				page = inflater.inflate(R.layout.activity_photo, null);
 				image = (ImageView)page.findViewById(R.id.photoImage);
-				Bitmap bmp = BitmapFactory.decodeStream(getAssets().open(unitNum+"/"+iPath));
+				Bitmap bmp = BitmapFactory.decodeStream(getAssets().open(folder+"/"+iPath));
 				image.setImageBitmap(bmp);
 				pages.add(page);
 			}
